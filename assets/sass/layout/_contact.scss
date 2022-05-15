@@ -1,0 +1,27 @@
+/* Contact Section */
+.contact-section {
+    position: relative;
+    background-image: url('../images/contact-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    .contact-left {
+        @include tablet {
+            margin-bottom: 60px;
+        }
+        @include landscape-phone {
+            margin-bottom: 60px;
+        }
+        @include portrait-phone {
+            margin-bottom: 60px;
+        }
+        h2 {
+            color: $purple-color;
+        }
+    }
+    .contact-form {
+        padding: 50px 40px;
+        background-color: $white-soft-color;
+        border-radius: 50px 0;
+    }
+}

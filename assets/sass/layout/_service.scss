@@ -1,0 +1,113 @@
+/* Service Section */
+.cropium-service-section {
+    .single-service-item {
+        margin-bottom: 30px;
+        .single-service-icon {
+            margin-right: 24px;
+            img {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}
+
+/* Service Section Home 02 */
+.service-home-2 {
+    position: relative;
+    .cropium-service-item {
+        position: relative;
+        .service-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px 0 0 0;
+            img {
+                width: auto;
+                height: auto;
+                @include landscape-phone {
+                    width: 100%;
+                }
+                @include portrait-phone {
+                    width: 100%;
+                }
+            }
+            .service-icon {
+                position: absolute;
+                left: 20px;
+                bottom: 0;
+            }
+            .template-icon.blue-icon {
+                i {
+                    background-color: rgba($white-color, .7);
+                }
+            }
+            .template-icon.red-icon {
+                i {
+                    background-color: rgba($white-color, .7);
+                }
+            }
+            .template-icon.yellow-icon {
+                i {
+                    background-color: rgba($white-color, .7);
+                }
+            }
+            .template-icon.paste-icon {
+                i {
+                    background-color: rgba($white-color, .7);
+                }
+            }
+        }
+        .service-content {
+            background-color: $white-color;
+            padding: 30px;
+            border-radius: 0 0 50px 0;
+            p {
+                margin: 15px 0;
+            }
+            a {
+                color: $heading-color;
+                font-weight: 700;
+                text-transform: capitalize;
+                transition: all .2s ease-in;
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    .service-slider {
+        .prev-arrow,
+        .next-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            background-color: transparent;
+            border: 1px solid $purple-color;
+            color: $purple-color;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 8px 0;
+            text-align: center;
+            cursor: pointer;
+            transition: $transition;
+            z-index: 1;
+            &:hover {
+                color: $white-color;
+                background-color: $purple-color;
+                border: 1px solid transparent;
+            }
+        }
+        .prev-arrow {
+            left: -100px;
+        }
+        .next-arrow {
+            right: -100px;
+        }
+        .slick-slide {
+            margin: 0 10px;
+        }
+    }
+}

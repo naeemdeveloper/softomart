@@ -1,0 +1,141 @@
+/* Client Section */
+.cropium-client-section {
+    background-color: $white-soft-color;
+    .client-slider {
+        .client-single-slide {
+            background-color: $white-color;
+            padding: 60px 80px;
+            @include landscape-phone {
+                padding: 40px;
+            }
+            @include portrait-phone {
+                padding: 40px;
+            }
+            .single-slide-image {
+                img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+            }
+            .single-slide-content {
+                margin-left: 40px;
+                @include landscape-phone {
+                    margin-left: 0;
+                    margin-top: 30px;
+                }
+                @include portrait-phone {
+                    margin-left: 0;
+                    margin-top: 30px;
+                }
+                span.reviewer-text {
+                    color: $heading-color;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-style: italic;
+                }
+                .reviewer-info {
+                    margin-top: 20px;
+                    h4.title {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        .prev-arrow,
+        .next-arrow {
+            position: absolute;
+            top: -80px;
+            font-size: 16px;
+            background-color: transparent;
+            border: 1px solid $heading-color;
+            color: $heading-color;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+            transition: $transition;
+            z-index: 1;
+            &:hover {
+                color: $white-color;
+                background-color: $secondary-color;
+                border: 1px solid transparent;
+            }
+        }
+        .prev-arrow {
+            right: 50px;
+        }
+        .next-arrow {
+            right: 0;
+        }
+    }
+}
+
+/* Client Section Home 02 */
+.client-home-2 {
+    .client-slider-home-2 {
+        .client-single-slide {
+            background-color: $white-color;
+            padding: 40px 20px;
+            display: flex;
+            border: 1px solid rgba($primary-color,.2);
+            border-radius: 20px 0;
+            @include portrait-phone {
+                display: inherit;
+            }
+            .client-image {
+                width: 20%;
+                @include desktop {
+                    width: 25%;
+                }
+                @include portrait-phone {
+                    width: 30%;
+                }
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 10px 0 10px 0;
+                }
+            }
+            .client-content {
+                width: 80%;
+                @include desktop {
+                    width: 75%;
+                }
+                @include portrait-phone {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                p {
+                    font-style: italic;
+                    font-size: 18px;
+                }
+            }
+            .client-content-bottom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .client-author {
+                    span {
+                        color: $purple-color;
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                    }
+                }
+                .client-quote-icon {
+                    i {
+                        color: rgba($primary-color, .2);
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .slick-slide {
+            margin: 0 10px;
+        }
+    }
+}

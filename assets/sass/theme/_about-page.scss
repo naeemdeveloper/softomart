@@ -1,0 +1,302 @@
+/* About Page */
+.feature-home-2.feature-about-page {
+    margin-top: 0;
+    background-color: $white-soft-color;
+    .template-icon {
+        i {
+            border-radius: 8px;
+        }
+    }
+}
+
+.value-section {
+    .template-icon {
+        i {
+            border-radius: 8px;
+        }
+    }
+    .single-value-item {
+        margin-bottom: 30px;
+        padding: 40px 30px;
+        border-radius: 10px;
+        box-shadow: 0 20px 50px rgba($primary-color, .1);
+        transition: $transition;
+        &:hover {
+            margin-top: -10px;
+        }
+        a {
+            color: $heading-color;
+            font-weight: 500;
+            text-transform: capitalize;
+            transition: $transition;
+            margin-top: 10px;
+            display: inline-block;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.cropium-team-section.team-about-page {
+    background-color: $white-soft-color;
+}
+
+.cropium-about-section.about-page {
+    .about-page-image {
+        @include tablet {
+            display: none;
+        }
+        @include landscape-phone {
+            display: none;
+        }
+        @include portrait-phone {
+            display: none;
+        }
+    }
+    .about-page-content {
+        @include tablet {
+            margin-top: 0;
+        }
+        @include landscape-phone {
+            margin-top: 0;
+        }
+        @include portrait-phone {
+            margin-top: 0;
+        }
+    }
+}
+
+.about-page-2 {
+    .content-author {
+        img {
+            width: auto;
+            height: auto;
+        }
+        .author-company {
+            margin: 0 20px;
+        }
+    }
+    .about-image {
+        @include tablet {
+            display: none;
+        }
+        @include landscape-phone {
+            display: none;
+        }
+        @include portrait-phone {
+            display: none;
+        }
+    }
+}
+
+.brochure-section {
+    padding: 40px 60px;
+    background-color: $primary-color;
+    h4.title,
+    p {
+        color: $white-color;
+    }
+    .brochure-button {
+        @include tablet {
+            margin-top: 40px;
+        }
+        @include landscape-phone {
+            margin-top: 40px;
+        }
+        @include portrait-phone {
+            margin-top: 40px;
+        }
+        a {
+            color: $white-soft-color;
+            text-transform: capitalize;
+            padding: 20px 30px;
+            background-color: $brochure-btn-bg;
+            border-radius: 5px;
+            transition: $transition;
+            &:hover {
+                box-shadow: 0 5px 10px $secondary-color;
+            }
+        }
+    }
+}
+
+.feature-about-page.feature-about-page-2 {
+    background-color: $white-color;
+    .single-feature-item {
+        .template-icon {
+            i {
+                margin-right: 20px;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.working-history-section {
+    .working-timeline {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 92%;
+            background-color: $border-color;
+            @include landscape-phone {
+                left: 7px;
+            }
+            @include portrait-phone {
+                left: 7px;
+            }
+        }
+        .single-timeline  {
+            overflow: hidden;
+            span.one-step {
+                padding: 7px 20px;
+                text-transform: capitalize;
+                font-weight: 500;
+            }
+        }
+        .timeline-content,
+        .timeline-year {
+            padding: 30px;
+        }
+        .timeline-year {
+            @include landscape-phone {
+                padding: 30px 30px 0;
+            }
+            @include portrait-phone {
+                padding: 30px 30px 0;
+            }
+        }
+        .timeline-1 {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 40px;
+                right: 50%;
+                transform: translateX(50%);
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: $primary-color;
+                @include landscape-phone {
+                    left: 0;
+                    transform: translateX(0);
+                }
+                @include portrait-phone {
+                    left: 0;
+                    transform: translateX(0);
+                }
+            }
+            h3.timeline-year {
+                color: $primary-color;
+            }
+            span.one-step {
+                color: $primary-color;
+                background-color: rgba($primary-color, .1);
+            }
+        }
+        .timeline-2 {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 40px;
+                right: 50%;
+                transform: translateX(50%);
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: $yellow-color;
+                @include landscape-phone {
+                    left: 0;
+                    transform: translateX(0);
+                }
+                @include portrait-phone {
+                    left: 0;
+                    transform: translateX(0);
+                }
+            }
+            h3.timeline-year {
+                color: $yellow-color;
+            }
+            span.one-step {
+                color: $yellow-color;
+                background-color: rgba($yellow-color, .1);
+            }
+        }
+        .timeline-3 {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 40px;
+                right: 50%;
+                transform: translateX(50%);
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: $red-color;
+                @include landscape-phone {
+                    left: 0;
+                    transform: translateX(0);
+                }
+                @include portrait-phone {
+                    left: 0;
+                    transform: translateX(0);
+                }
+            }
+            h3.timeline-year {
+                color: $red-color;
+            }
+            span.one-step {
+                color: $red-color;
+                background-color: rgba($red-color, .1);
+            }
+        }
+        .timeline-4 {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 40px;
+                right: 50%;
+                transform: translateX(50%);
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: $paste-color;
+                @include landscape-phone {
+                    left: 0;
+                    transform: translateX(0);
+                }
+                @include portrait-phone {
+                    left: 0;
+                    transform: translateX(0);
+                }
+            }
+            h3.timeline-year {
+                color: $paste-color;
+            }
+            span.one-step {
+                color: $paste-color;
+                background-color: rgba($paste-color, .1);
+            }
+        }
+    }
+}
+
+.common-footer.footer-about-2 {
+    background-color: $white-soft-color;
+    .footer-copyright {
+        background-color: $white-color;
+    }
+}

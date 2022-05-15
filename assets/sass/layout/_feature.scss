@@ -1,0 +1,145 @@
+/* Feature Section */
+.cropium-feature-section {
+    background-color: $white-soft-color;
+    position: relative;
+    overflow: hidden;
+    .feature-item {
+        position: relative;
+        text-align: center;
+        padding: 40px 30px;
+        overflow: hidden;
+        transition: $transition;
+        &:hover {
+            background: $secondary-color;
+            i,
+            h4.title,
+            p,
+            a {
+                color: $white-color;
+            }
+        }
+        i {
+            font-size: 50px;
+            margin-bottom: 30px;
+            transition: $transition;
+        }
+        .feature-content-para {
+            margin: 20px 0;
+        }
+        a {
+            color: $heading-color;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+    .feature-item.active {
+        background-color: $secondary-color;
+        i,
+        h4.title,
+        p,
+        a {
+            color: $white-color;
+        }
+    }
+
+    .prev-arrow,
+    .next-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        background-color: transparent;
+        border: 1px solid $heading-color;
+        color: $heading-color;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        transition: $transition;
+        z-index: 1;
+        &:hover {
+            color: $white-color;
+            background-color: $secondary-color;
+            border: 1px solid transparent;
+        }
+    }
+    .prev-arrow {
+        left: -150px;
+    }
+    .next-arrow {
+        right: -150px;
+    }
+    .slick-slide {
+        margin: 0 10px;
+    }
+}
+
+/* Feature Section Home 02 */
+.feature-home-2 {
+    position: relative;
+    margin-top: -120px;
+    .single-feature-item {
+        padding: 40px 30px;
+        background-color: $white-color;
+        border-radius: 10px;
+        box-shadow: 0 20px 50px $white-soft-color;
+        margin-bottom: 30px;
+        transition: $transition;
+        &:hover {
+            margin-top: -10px;
+        }
+        .feature-content-para {
+            margin-top: 15px;
+        }
+        .feature-btn {
+            margin-top: 10px;
+            display: inline-block;
+            color: $heading-color;
+            text-transform: capitalize;
+            font-weight: 500;
+            transition: all .2s ease-in;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+/* More Feature Section Home 02 */
+.more-feature-home-2 {
+    position: relative;
+    .more-feature-shape {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: auto;
+        height: auto;
+    }
+    .more-feature-image-section {
+        img {
+            border-radius: 80px 0;
+        }
+        @include tablet {
+            display: none;
+        }
+        @include landscape-phone {
+            display: none;
+        }
+        @include portrait-phone {
+            display: none;
+        }
+    }
+    .more-feature-content-section {
+        .feature-single-list {
+            margin-top: 30px;
+            i {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+

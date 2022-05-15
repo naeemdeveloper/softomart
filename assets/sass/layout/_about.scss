@@ -1,0 +1,109 @@
+/* About Section */
+.cropium-about-section {
+    position: relative;
+    background-image: url('../images/about-page-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    .about-page-content {
+        @include tablet {
+            margin-top: 40px;
+        }
+        @include landscape-phone {
+            margin-top: 40px;
+        }
+        @include portrait-phone {
+            margin-top: 40px;
+        }
+    }
+    .about-page-info {
+        position: relative;
+        background-color: $border-color;
+        padding: 30px 40px;
+        margin-top: 40px;
+        border-left: 4px solid $primary-color;
+        box-sizing: border-box;
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: auto;
+            height: auto;
+        }
+        h3.title {
+            display: inline-block;
+            span {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+/* About Section Home 2 */ 
+.about-home-2 {
+    .about-image-section {
+        img {
+            border-radius: 80px 0;
+        }
+        @include tablet {
+            display: none;
+        }
+        @include landscape-phone {
+            display: none;
+        }
+        @include portrait-phone {
+            display: none;
+        }
+    }
+    .about-content-section {
+        position: relative;
+        .about-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+        hr {
+            border: 1px solid $yellow-color;
+            opacity: .1;
+        }
+
+        .about-social-link {
+            div {
+                width: 90px;
+                height: 90px;
+                text-align: center;
+                padding-top: 17px;
+                border-radius: 10px 0;
+                transition: $transition;
+                &:hover {
+                    margin-top: -5px;
+                }
+                i {
+                    color: $white-color;
+                    font-size: 30px
+                }
+                span {
+                    color: $white-color;
+                    display: block;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    font-size: 16px;
+                }
+            }
+            .gmail-part {
+                background-color: rgba($yellow-color, .7);
+                margin-right: 30px;
+            }
+            .linkedin-part {
+                background-color: rgba($linkedin, .7);
+                margin-right: 30px;
+            }
+            .instagram-part {
+                background-color: rgba($instagram, .7);
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+/* SpeedUp Section */
+.cropium-speedup-section {
+    padding: 90px 0 90px;
+    .speedup-image {
+        position: relative;
+        background-image: url('../images/speedup-bg.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+        overflow: hidden;
+        @include tablet {
+            display: none;
+        }
+        @include landscape-phone {
+            display: none;
+        }
+        @include portrait-phone {
+            display: none;
+        }
+        img {
+            width: auto;
+            height: auto;
+        }
+        .speedup-main-image {
+            margin: auto;
+            position: relative;
+            top: 60px;
+        }
+        .speedup-image-1 {
+            position: absolute;
+            top: 60px;
+            left: -60px;
+        }
+        .speedup-image-2 {
+            position: absolute;
+            top: 270px;
+            left: 20px;
+        }
+        .speedup-image-3 {
+            position: absolute;
+            top: 150px;
+            right: 20px;
+        }
+        .speedup-image-4 {
+            position: absolute;
+            top: 280px;
+            right: 10px;
+        }
+    }
+}
+
+.speedup-progressbar {
+    .dm {
+        h5.title,
+        .percentCount {
+            color: $primary-color;
+        }
+    }
+    .fs {
+        h5.title,
+        .percentCount {
+            color: $red-color;
+        }
+    }
+    .con {
+        h5.title,
+        .percentCount {
+            color: $yellow-color;
+        }
+    }
+    .percentCount {
+        margin-top: 0;
+        position: relative;
+        top: -32px;
+    }
+}

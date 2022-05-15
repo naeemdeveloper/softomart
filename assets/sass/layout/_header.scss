@@ -1,0 +1,141 @@
+/* Header Section */
+.cropium-header-section {
+	.navbar {
+		// .logo-wrapper {
+		// 	img {
+		// 		width: 90%;
+		// 	}
+		// 	@include tablet {
+		// 		img {
+		// 			width: 80%;
+		// 		}
+		// 	}
+		// 	@include landscape-phone {
+		// 		img {
+		// 			width: 80%;
+		// 		}
+		// 	}
+		// 	@include portrait-phone {
+		// 		img {
+		// 			width: 80%;
+		// 		}
+		// 	}
+		// }
+	}
+    .navbar-toggler {
+		@include tablet {
+			position: absolute;
+			top: 32px;
+			right: 15px;
+		}
+		@include landscape-phone {
+			position: absolute;
+			top: 32px;
+			right: 15px;
+		}
+		@include portrait-phone {
+			position: absolute;
+			top: 30px;
+			right: 15px;
+		}
+		.toggle-icon {
+			@include tablet {
+				height: 2px;
+				width: 24px;
+				background-color: $black-color;
+				display: flex;
+				flex-direction: column;
+				margin: 4px 0;
+				transition: all 0.3s ease-in;
+				position: relative;
+			}
+			@include landscape-phone {
+				height: 2px;
+				width: 24px;
+				background-color: $black-color;
+				display: flex;
+				flex-direction: column;
+				margin: 4px 0;
+				transition: all 0.3s ease-in;
+				position: relative;
+			}
+			@include portrait-phone {
+				height: 2px;
+				width: 24px;
+				background-color: $black-color;
+				display: flex;
+				flex-direction: column;
+				margin: 4px 0;
+				transition: all 0.3s ease-in;
+				position: relative;
+			}
+		}
+	}
+	.navbar-nav {
+		@include tablet {
+			background-color: $primary-color;
+			padding: 5px 20px;
+		}
+		@include landscape-phone {
+			background-color: $primary-color;
+			padding: 5px 20px;
+		}
+		@include portrait-phone {
+			background-color: $primary-color;
+			padding: 5px 20px;
+		}
+		li {
+			a {
+				@include tablet {
+					color: $white-color!important;
+				}
+				@include landscape-phone {
+					color: $white-color!important;
+				}
+				@include portrait-phone {
+					color: $white-color!important;
+				}
+			}
+		}
+	}
+	.nav-right-content {
+		li {
+			margin-left: 20px!important;
+		}
+        .template-button {
+            padding: 12px 24px;
+            color: $white-color!important;
+            background-color: $primary-color;
+            border: 1px solid transparent;
+            &:hover {
+                opacity: .8;
+            }
+        }
+        .template-button.home-2-button {
+            background-color: $purple-color;
+            &:hover {
+                color: $purple-color;
+                background-color: transparent;
+                border: 1px solid $purple-color;
+            }
+        }
+		@include tablet {
+			position: absolute;
+			top: 28px;
+			right: 80px;
+		}
+		@include landscape-phone {
+			position: absolute;
+			top: 28px;
+			right: 80px;
+		}
+		@include portrait-phone {
+			position: absolute;
+			top: 35px;
+			right: 40px;
+			.template-button {
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,268 @@
+/* Pricing Section */
+.cropium-pricing-section {
+    .single-pricing-box {
+        position: relative;
+        background-color: $border-color;
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        transition: $transition;
+        &:hover {
+            background-color: $secondary-color;
+            .pricing-flower {
+                opacity: 1;
+            }
+            h6.title,
+            h3.title {
+                color: $white-color;
+            }
+            .pricing-amount {
+                color: $white-color;
+            }
+            .pricing-list {
+                li {
+                    color: $white-color;
+                }
+            }
+            .template-large-button {
+                color: $secondary-color;
+                background-color: $white-color;
+            }
+        }
+        .pricing-flower {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            width: auto;
+            height: auto;
+            transition: $transition;
+            opacity: 0;
+        }
+        .pricing-top-icon {
+            i {
+                color: $yellow-color;
+                font-size: 30px;
+            }
+        }
+        h3.title,
+        h6.title {
+            transition: $transition;
+        }
+        .pricing-amount {
+            color: $secondary-color;
+            font-weight: 700;
+            text-transform: capitalize;
+            transition: $transition;
+            span.amount-opacity {
+                opacity: .5;
+            }
+        }
+        .pricing-list {
+            margin-top: 40px;
+            li {
+                margin: 15px 0;
+                transition: $transition;
+                img {
+                    width: auto;
+                    height: auto;
+                    margin-right: 16px;
+                }
+            }
+        }
+        .pricing-button {
+            margin-top: 40px;
+            text-align: center;
+            .template-large-button {
+                width: 100%;
+            }
+        }
+    }
+    .single-pricing-box.active {
+        background-color: $secondary-color;
+        .pricing-flower {
+            opacity: 1;
+        }
+        h6.title,
+        h3.title {
+            color: $white-color;
+        }
+        .pricing-amount {
+            color: $white-color;
+        }
+        .pricing-list {
+            li {
+                color: $white-color;
+            }
+        }
+        .template-large-button {
+            color: $secondary-color;
+            background-color: $white-color;
+        }
+    }
+
+    .tab-accordion {
+        .tab-content {
+            .hidden-item {
+                display: none;
+            }
+            .active {
+                display: block;
+            }
+        }
+        .tab {
+            margin-bottom: 50px;
+            text-align: center;
+            li {
+                display: inline-block;
+                margin: 0 10px;
+                text-transform: capitalize;
+                cursor: pointer;
+                font-weight: 500;
+            }
+            .active {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+/* Pricing Section Home 02 */
+.pricing-home-2 {
+    position: relative;
+    background-image: url('../images/pricing-bg.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    .single-pricing-box {
+        position: relative;
+        border-radius: 30px 0;
+        padding: 40px;
+        margin-bottom: 30px;
+        transition: $transition;
+        border: 1px solid rgba($primary-color, .2);
+        background-color: $white-color;
+        &:hover {
+            border: 1px solid transparent;
+            box-shadow: 0 20px 50px rgba($primary-color, .1);
+        }
+        .pricing-amount {
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: capitalize;
+            transition: $transition;
+            margin-top: 10px;
+            span.amount-opacity {
+                font-size: 16px;
+            }
+        }
+        .pricing-list {
+            margin-top: 30px;
+            li {
+                margin: 15px 0;
+                transition: $transition;
+                i {
+                    margin-right: 10px;
+                    position: relative;
+                    top: 3px;
+                    transition: $transition;
+                }
+            }
+        }
+        .pricing-button {
+            margin-top: 40px;
+            text-align: center;
+            .template-large-button {
+                width: 100%;
+                &:hover {
+                    color: $white-color;
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
+    .single-pricing-box.blue-box {
+        &:hover {
+            .pricing-amount {
+                color: $primary-color;
+            }
+            .pricing-list {
+                i {
+                    color: $primary-color;
+                }
+            }
+            .template-large-button {
+                background-color: $primary-color;
+            }
+        }
+    }
+    .single-pricing-box.yellow-box {
+        &:hover {
+            .pricing-amount {
+                color: $yellow-color;
+            }
+            .pricing-list {
+                i {
+                    color: $yellow-color;
+                }
+            }
+            .template-large-button {
+                background-color: $yellow-color;
+            }
+        }
+    }
+    .single-pricing-box.single-pricing-box.yellow-box.active {
+        border: 1px solid transparent;
+        box-shadow: 0 20px 50px rgba($primary-color, .1);
+        .pricing-amount {
+            color: $yellow-color;
+        }
+        .pricing-list {
+            i {
+                color: $yellow-color;
+            }
+        }
+        .template-large-button {
+            background-color: $yellow-color;
+        }
+    }
+    .single-pricing-box.orange-box {
+        &:hover {
+            .pricing-amount {
+                color: $orange-color;
+            }
+            .pricing-list {
+                i {
+                    color: $orange-color;
+                }
+            }
+            .template-large-button {
+                background-color: $orange-color;
+            }
+        }
+    }
+
+    .tab-accordion {
+        .tab-content {
+            .hidden-item {
+                display: none;
+            }
+            .active {
+                display: block;
+            }
+        }
+        .tab {
+            margin-bottom: 50px;
+            text-align: center;
+            li {
+                display: inline-block;
+                margin: 0 10px;
+                text-transform: capitalize;
+                cursor: pointer;
+                font-weight: 500;
+            }
+            .active {
+                color: $purple-color;
+            }
+        }
+    }
+}

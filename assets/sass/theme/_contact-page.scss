@@ -1,0 +1,72 @@
+/* Contact Page */
+.contact-page-top {
+    .contact-info-box {
+        position: relative;
+        box-shadow: 0 20px 40px rgba($primary-color, .1);
+        border-radius: 10px;
+        padding: 30px;
+        transition: $transition;
+        margin-bottom: 30px;
+        &:hover {
+            margin-top: -10px;
+        }
+        .template-icon {
+            i {
+                border-radius: 8px;
+            }
+        }
+        .icon-opacity {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 50px;
+            line-height: 0;
+            opacity: .1;
+        }
+    }
+    .contact-info-box.email-part {
+        .icon-opacity {
+            i {
+                color: $red-color;
+            }
+        }
+    }
+    .contact-info-box.address-part {
+        .icon-opacity {
+            i {
+                color: $yellow-color;
+            }
+        }
+    }
+    .contact-info-box.office-part {
+        .icon-opacity {
+            i {
+                color: $paste-color;
+            }
+        }
+    }
+}
+
+.contact-page-bottom {
+    .contact-map {
+        @include tablet {
+            margin-bottom: 30px;
+        }
+        @include landscape-phone {
+            margin-bottom: 30px;
+        }
+        @include portrait-phone {
+            margin-bottom: 30px;
+        }
+    }
+    .contact-form {
+        input,
+        textarea {
+            border-radius: 0;
+        }
+        .template-button.home-2-button {
+            border-radius: 0;
+            width: 100%;
+        }
+    }
+}

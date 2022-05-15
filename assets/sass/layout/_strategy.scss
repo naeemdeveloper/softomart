@@ -1,0 +1,250 @@
+/* Strategy Section */
+.cropium-strategy-section {
+    background-color: $white-soft-color;
+    position: relative;
+    padding: 115px 0 120px;
+    @include tablet {
+        padding: 115px 0 90px;
+    }
+    @include landscape-phone {
+        padding: 115px 0 90px;
+    }
+    @include portrait-phone {
+        padding: 115px 0 90px;
+    }
+    .strategy-left-part,
+    .strategy-right-part {
+        width: 80%;
+        position: relative;
+        @include screen-1200 {
+            width: 95%;
+        }
+        @include desktop {
+            width: 95%;
+        }
+        @include tablet {
+            width: 95%;
+        }
+        @include landscape-phone {
+            width: 95%;
+        }
+        @include portrait-phone {
+            width: 95%;
+        }
+        img {
+            position: absolute;
+            width: auto;
+            height: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            @include screen-1440 {
+                display: none;
+            }
+            @include screen-1200 {
+                display: none;
+            }
+            @include desktop {
+                display: none;
+            }
+            @include tablet {
+                display: none;
+            }
+            @include landscape-phone {
+                display: none;
+            }
+            @include portrait-phone {
+                display: none;
+            }
+        }
+    }
+    .strategy-left-part {
+        float: right; 
+        @include tablet {
+            float: none;
+        }
+        @include landscape-phone {
+            float: none;
+        }
+        @include portrait-phone {
+            float: none;
+        }
+        img {
+            right: -100px;
+        }
+        .strategy-single-box.single-box-2 {
+           position: relative;
+           left: -40px;
+           @include screen-1200 {
+               left: 0;
+           }
+           @include desktop {
+               left: 0;
+           }
+           @include tablet {
+               left: 0;
+           }
+           @include landscape-phone {
+               left: 0;
+           }
+           @include portrait-phone {
+               left: 0;
+           }
+        }
+    }
+    .strategy-right-part {
+        img {
+            left: -100px;
+        }
+        .strategy-single-box.single-box-5 {
+            position: relative;
+            left: 40px;
+            @include screen-1200 {
+                left: 0;
+            }
+            @include desktop {
+                left: 0;
+            }
+            @include tablet {
+                left: 0;
+            }
+            @include landscape-phone {
+                left: 0;
+            }
+            @include portrait-phone {
+                left: 0;
+            }
+        }
+    }
+    .strategy-single-box {
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+        padding: 30px;
+        background-color: $white-color;
+        border-radius: 10px;
+        .single-box-icon {
+            margin-right: 20px;
+            i {
+                font-size: 30px;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+    }
+    .strategy-single-box.single-box-1 {
+        .single-box-icon{
+            i {
+                color: $primary-color;
+                background-color: rgba(120, 119, 238, .1);
+            }
+        }
+        .single-box-content {
+            h3.title {
+                color: $primary-color;
+            }
+        }
+    }
+    .strategy-single-box.single-box-2,
+    .strategy-single-box.single-box-5 {
+        .single-box-icon{
+            i {
+                color: $red-color;
+                background-color: rgba(244, 85, 126, .1);
+            }
+        }
+        .single-box-content {
+            h3.title {
+                color: $red-color;
+            }
+        }
+    }
+    .strategy-single-box.single-box-3,
+    .strategy-single-box.single-box-6 {
+        .single-box-icon{
+            i {
+                color: $yellow-color;
+                background-color: rgba(251, 169, 32, .1);
+            }
+        }
+        .single-box-content {
+            h3.title {
+                color: $yellow-color;
+            }
+        }
+    }
+    .strategy-single-box.single-box-4 {
+        .single-box-icon{
+            i {
+                color: $paste-color;
+                background-color: rgba(76, 197, 228, .1);
+            }
+        }
+        .single-box-content {
+            h3.title {
+                color: $paste-color;
+            }
+        }
+    }
+
+    .strategy-video-part {
+        background-image: url('../images/video-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 620px;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        @include screen-1440 {
+            width: 100%;
+        }
+        @include screen-1200 {
+            width: 100%;
+        }
+        @include desktop {
+            width: 100%;
+        }
+        @include tablet {
+            width: 100%;
+            height: 200px;
+            background: none;
+            margin-bottom: 30px;
+        }
+        @include landscape-phone {
+            width: 100%;
+            height: 200px;
+            background: none;
+            margin-bottom: 30px;
+        }
+        @include portrait-phone {
+            width: 100%;
+            height: 200px;
+            background: none;
+            margin-bottom: 30px;
+        }
+        .video-play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            i {
+                font-size: 30px;
+                color: $white-color;
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+                text-align: center;
+                background-color: $secondary-color;
+                border-radius: 50%;
+                cursor: pointer;
+                animation: ripple 1s linear infinite;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+/*-------------------------------------------------------------
+Template Name: Softomart Business Template
+Template URI: http://cropium.softtechthemes.com/
+Author: SoftTech IT
+Author URI: https://themeforest.net/user/softtech-it/portfolio
+Version: 1.0
+-------------------------------------------------------------*/ 
+
+/*------------------------------------------------------------- 
+TABLE OF CONTENTS: 
+---------------------------------------------------------------
+>> Author CSS
+>> Main Menu
+>> Header Section
+>> Footer Section
+>> Breadcrumb Section
+>> Hero Section
+>> Service Section
+>> About Section
+>> Feature Section
+>> CounterUp Section
+>> Pricing Section
+>> Strategy Section
+>> Client Section
+>> Blog Section
+>> CTA Section
+>> Brand Section
+>> Case Study Section
+>> Contact Section
+>> Preloader
+>> Button 
+>> Form
+>> Accordion
+>> Search PopUp
+>> Theme
+>> About Section
+>> Blog Page
+>> Blog Details Page
+>> Service Page 
+>> Service Details Page
+>> Project Page
+>> Project Details Page
+>> Contact Page
+>> 404 Page
+--------------------------------------------------------------*/
+
+// Setting
+@import 'settings/variable';
+@import 'settings/mixin';
+
+// Base
+@import 'base/base';
+
+// Layout
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/breadcrumb';
+@import 'layout/hero';
+@import 'layout/service';
+@import 'layout/about';
+@import 'layout/feature';
+@import 'layout/counterup';
+@import 'layout/pricing';
+@import 'layout/strategy';
+@import 'layout/team';
+@import 'layout/speedup';
+@import 'layout/client';
+@import 'layout/blog';
+@import 'layout/cta';
+@import 'layout/brand';
+@import 'layout/case-study';
+@import 'layout/contact';
+
+// Module
+@import 'module/preloader';
+@import 'module/btn';
+@import 'module/form';
+@import 'module/accordion';
+@import 'module/search-popup';
+
+// Theme 
+@import 'theme/theme';
+@import 'theme/about-page';
+@import 'theme/blog-page';
+@import 'theme/blog-details-page';
+@import 'theme/service-page';
+@import 'theme/service-details-page';
+@import 'theme/project-page';
+@import 'theme/project-details-page';
+@import 'theme/contact-page';
+@import 'theme/404-page';
+

@@ -1,0 +1,172 @@
+/* Blog Details Page */
+.blog-details-area {
+    .cropium-blog-item {
+        margin-bottom: 60px;
+        .blog-image {
+            height: 380px;
+            img {
+                transition: $transition;
+            }
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                    opacity: .7;
+                }
+            }
+            @include landscape-phone {
+                height: 280px;
+            }
+            @include portrait-phone {
+                height: 250px;
+            }
+        }
+        .blog-single-quote {
+            position: relative;
+            padding: 30px;
+            background-color: $white-color;
+            .blog-quote {
+                position: absolute;
+                top: 25px;
+                left:30px;
+                color: $primary-color;
+                font-size: 30px;
+            }
+            p {
+                margin-top: 0;
+                margin-left: 45px;
+            }
+        }
+    }
+    .blog-image {
+        position: relative;
+        overflow: hidden;
+        img {
+            height: 100%;
+            transition: $transition;
+        }
+    }
+    .blog-content {
+        padding: 40px;
+        background-color: $white-soft-color;
+        width: 90%;
+        margin: auto;
+        border-radius: 10px 10px 0 0;
+        margin-top: -20px;
+        position: relative;
+        z-index: 2;
+        .blog-meta {
+            text-transform: capitalize;
+            margin-bottom: 10px;
+            font-size: 14px;
+            a {
+                color: $paragraph-color;
+            }
+            i {
+                margin-right: 5px;
+                font-weight: 700;
+            }
+            li {
+                display: inline-block;
+                +li {
+                    margin-left: 20px;
+                }
+            }
+        }
+        h3.title {
+            transition: $transition;
+            a {
+                color: $heading-color;
+                transition: $transition;
+            }
+            &:hover {
+                a {
+                    color: $primary-color;
+                }
+            }
+        }
+        p {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+
+    .comments-title {
+        margin-bottom: 40px;
+    }
+    .single-comment-list {
+        margin-top: 40px;
+        .list-image {
+            float: left;
+            overflow: hidden;
+            margin-right: 20px;
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+        }
+        .list-content {
+            overflow: hidden;
+            .replay-button {
+                color: $heading-color;
+                font-size: 14px;
+                text-transform: capitalize;
+                opacity: .8;
+                cursor: pointer;
+                transition: all .2s ease-in;
+                &:hover {
+                    color: $secondary-color;
+                }
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .single-comment-list-02 {
+        margin-left: 100px;
+        @include portrait-phone {
+            margin-left: 50px;
+        }
+    }
+    .area-separator {
+        width: 100%;
+        height: 1px;
+        background-color: $border-color;
+        margin: 60px 0;
+    }
+
+    .widget-search {
+        @include tablet {
+            margin-top: 60px;
+        }
+        @include landscape-phone {
+            margin-top: 60px;
+        }
+        @include portrait-phone {
+            margin-top: 60px;
+        }
+    }
+
+    .blog-comments-form {
+        form {
+            input,
+            textarea {
+                padding: 15px 30px;
+                width: 100%;
+                margin-bottom: 30px;
+                border: 1px solid rgba($primary-color, .2);
+            }
+            textarea {
+                height: 150px;
+            }
+            button {
+                border: 1px solid transparent;
+                &:hover {
+                    color: $heading-color;
+                    border: 1px solid $heading-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+/* Form */
+.common-footer {
+    form {
+        position: relative;
+        margin-bottom: 15px;
+        width: 100%;
+        input {
+            color: $white-color;
+            background-color: $secondary-color;
+            width: 100%;
+            border: 1px solid transparent;
+            padding: 12px 60px 12px 20px;
+        }
+        button {
+            color: $white-color;
+            border: 1px solid transparent;
+            padding: 12px 24px;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: transparent;
+            cursor: pointer;
+        }
+        ::placeholder {
+            color: $white-color;
+            opacity: 1; /* Firefox */
+          }
+          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+           color: $white-color;
+          }
+          ::-ms-input-placeholder { /* Microsoft Edge */
+           color: $white-color;
+          }
+    }
+}
+
+.contact-form {
+    form {
+        input,
+        textarea {
+            padding: 15px 30px;
+            width: 100%;
+            margin-bottom: 30px;
+            border: 1px solid rgba($primary-color, .2);
+            border-radius: 8px 0;
+        }
+        input[type=text],
+        input[type=email] {
+            &:focus {
+                border: 1px solid rgba($primary-color, .2);
+            }
+        }
+        textarea {
+            height: 150px;
+        }
+    }
+}
+
+.newsletter-form {
+    position: relative;
+    input {
+        padding: 15px 30px;
+        width: 60%;
+        border: 1px solid rgba($primary-color, .2);
+        border-radius: 8px 0;
+    }
+}

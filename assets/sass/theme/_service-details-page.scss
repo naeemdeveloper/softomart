@@ -1,0 +1,134 @@
+/* Service Details Page */
+.service-details-section {
+    .service-widget-tab {
+        .service-widget {
+            padding: 20px 30px;
+            transition: $transition;
+            display: block;
+            text-transform: capitalize;
+            font-weight: 700;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba($primary-color, .1);
+            position: relative;
+            cursor: pointer;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 0;
+                height: 100%;
+                background-color: $primary-color;
+                transition: $transition;
+            }
+        }
+        .service-widget.active {
+            &:before {
+                width: 4px;
+            }
+        }
+    }
+    .tab-content {
+        @include tablet {
+            margin-top: 60px;
+        }
+        @include landscape-phone {
+            margin-top: 60px;
+        }
+        @include portrait-phone {
+            margin-top: 60px;
+        }
+        .hidden-item {
+            display: none;
+        }
+        .hidden-item.active {
+            display: block;
+        }
+    }
+
+    .button-widget {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        color: $white-color;
+        background-color: $primary-color;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin-bottom: 20px;
+        transition: $transition;
+        .button-icon {
+            color: $white-color;
+            font-size: 30px;
+            transition: $transition;
+        }
+        &:hover {
+            color: $white-color;
+            background-color: $secondary-color;
+            .button-icon {
+                color: $white-color;
+            }
+        }
+    }
+
+    .widget-help-box {
+        padding: 40px 30px;
+        border: 2px dotted $border-color;
+        .template-icon {
+            i {
+                font-size: 24px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                border-radius: 8px;
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+        }
+        .content-part {
+            h5.title {
+                color: $primary-color;
+            }
+            span {
+                font-weight: 500;
+            }
+        }
+        .email-part {
+            h5.title {
+                color: $yellow-color;
+            }
+            span {
+                font-weight: 500;
+            }
+        }
+        .address-part {
+            h5.title {
+                color: $red-color;
+            }
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .industrial-service-list {
+        span.role-li {
+            margin: 10px 0;
+            font-weight: 500;
+            text-transform: capitalize;
+            display: block;
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.service-details-section.leaf-shape-both {
+    .hero-shape {
+        top: 30%;
+    }
+    .more-feature-shape {
+        top: 70%;
+    }
+}

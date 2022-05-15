@@ -1,0 +1,184 @@
+/* Blog Section */
+.cropium-blog-section {
+    .blog-single-slide {
+        &:hover {
+            .single-slide-image {
+                img {
+                    transform: scale(1.1) rotate(5deg);
+                }
+            }
+        }
+        .single-slide-image {
+            position: relative;
+            margin-bottom: 30px;
+            overflow: hidden;
+            img {
+                transition: $transition;
+            }
+            .blog-date {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px 20px;
+                text-align: center;
+                h5.title {
+                    margin: 0;
+                    color: $white-color;
+                }
+                span {
+                    color: $white-color;
+                    text-transform: capitalize;
+                }
+            }
+            .blog-date.date-1 {
+                background-color: $red-color;
+            }
+            .blog-date.date-2 {
+                background-color: $yellow-color;
+            }
+            .blog-date.date-3 {
+                background-color: $primary-color;
+            }
+        }
+        .single-slide-content {
+            h4.title {
+                a {
+                    color: $heading-color;
+                    transition: $transition;
+                    &:hover {
+                        color:$primary-color;
+                    }
+                }
+            }
+            p {
+                margin-top: 20px;
+            }
+            .blog-button {
+                color: $heading-color;
+                font-weight: 700;
+                text-transform: capitalize;
+                transition: $transition;
+                margin-top: 10px;
+                display: inline-block;
+                i {
+                    margin-left: 5px;
+                }
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .blog-slider {
+        .slick-slide {
+            padding: 0 10px;
+        }
+
+        .prev-arrow,
+        .next-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50);
+            font-size: 16px;
+            background-color: transparent;
+            border: 1px solid $heading-color;
+            color: $heading-color;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+            transition: $transition;
+            z-index: 1;
+            &:hover {
+                color: $white-color;
+                background-color: $secondary-color;
+                border: 1px solid transparent;
+            }
+        }
+        .prev-arrow {
+            left: -100px;
+        }
+        .next-arrow {
+            right: -100px;
+        }
+    }
+}
+
+/* Blog Section Home 2 */
+.blog-home-2 {
+    .blog-single-item {
+        margin-bottom: 30px;
+        &:hover {
+            .blog-single-image {
+                img {
+                    transform: scale(1.1) rotate(5deg);
+                }
+            }
+        }
+        .blog-single-image {
+            position: relative;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 50px 0;
+            img {
+                transition: $transition;
+            }
+            .blog-date {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 10px 20px;
+                text-align: center;
+                border-radius: 10px 0;
+                h5.title {
+                    margin: 0;
+                    color: $white-color;
+                }
+                span {
+                    color: $white-color;
+                    text-transform: capitalize;
+                }
+            }
+            .blog-date.date-1 {
+                background-color: $red-color;
+            }
+            .blog-date.date-2 {
+                background-color: $yellow-color;
+            }
+            .blog-date.date-3 {
+                background-color: $primary-color;
+            }
+        }
+        .blog-single-content {
+            h4.title {
+                a {
+                    color: $heading-color;
+                    transition: $transition;
+                    &:hover {
+                        color:$primary-color;
+                    }
+                }
+            }
+            p {
+                margin-top: 20px;
+            }
+            .blog-button {
+                color: $heading-color;
+                font-weight: 700;
+                text-transform: capitalize;
+                transition: $transition;
+                margin-top: 10px;
+                display: inline-block;
+                i {
+                    margin-left: 5px;
+                }
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
